@@ -1,0 +1,55 @@
+#wrapper
+{
+    position:relative;
+    width:600px;
+    height:252px; 
+    margin:0 auto;
+    border-style:transparent;
+    border-width:2px;
+    border-color:black;
+}
+
+#yield_wrap
+{
+    position:relative;
+    margin:0 auto;
+    border-style:transparent;
+    border-width:2px;
+    border-color:black;
+    width:600px;
+    height:100px; 
+}
+
+#box
+{
+    position:absolute;    
+    background-color:none; 
+    border-style:transparent;
+    border-width:2px;
+    border-color:black;
+    height:250px;
+    width:300px;
+    margin:0px;
+}
+
+#field-wrap
+{
+    position:absolute;
+    top:60px;
+    right:10px; 
+    width:180px; 
+    border-style:transparent;
+    border-width:2px;
+    border-color:black;      
+}
+
+#wrapper2
+{
+    position:relative;
+    margin:0 auto;
+    border-style:transparent;
+    border-width:2px;
+    border-color:black;
+    width:220px;
+    height:50px;
+}
