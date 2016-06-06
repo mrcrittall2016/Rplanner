@@ -1,0 +1,58 @@
+<html>
+    <head>     
+        
+        <!-- Javascript for drawing tool -->
+        <script type="text/javascript" language="javascript" src="http://peter-ertl.com/jsme/JSME_2016-05-21/jsme/jsme.nocache.js"></script>
+        
+        <script>
+            
+            var reaction = 1;            
+            
+            function jsmeOnLoad () {                
+                
+                document.JME = new JSApplet.JSME("jsme_container", "300px", "250px");
+                
+                // Add identifier to JME object
+                document.JME["step"] = 0; 
+                
+                // Store in global object array
+                drawing_objects.push(document.JME); 
+                
+            }            
+        </script>
+        
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        
+        <!--own style sheet -->
+        <link href="styles4.css" rel="stylesheet"/>
+        
+        <!-- Javascript for page -->
+        <script src="Rplan4.js"></script>
+               
+      
+    
+    </head>
+    <body>
+        
+        <h2> RPlanner Demo app4</h2>
+        
+        <div id ="wrapper">                               
+            <div id = "box">
+                <div id = "jsme_container"></div>  
+            </div>
+            <div id = "field-wrap">              
+                <div class="form-groups" style = "padding-top:10px;">
+                    <input autocomplete="off" autofocus class="form-control" name="Steps" placeholder="Number of Steps" type="text" id = "steps"/>
+                </div>
+                <button class="btn btn-default" type="submit" id = "generate">
+                        <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                        Generate
+                </button>
+            </div>           
+        </div>   
+    </body>
+</html>
+        
+        
+        
